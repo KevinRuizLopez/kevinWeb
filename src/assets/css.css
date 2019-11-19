@@ -1,0 +1,264 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.contenedor{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.fila{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    /*Para que no se mezclen filas y para que no se mezcle titulos y textos en filas*/
+    clear: both;
+    display: table
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/*
+-------------------------  Pantalla de Escritorio grande LARGE(lg)  --------------------------
+*/
+
+@media(min-width:1200px){
+    .col-lg-12{
+        width: 100%;
+    }
+
+    .col-lg-6{
+        width: 50%;
+    }
+
+    .col-lg-4{
+        width: 33.33333333%;
+    }
+
+    .col-lg-3{
+        width: 25%;
+    }
+
+    .col-lg-9{
+        width: 75%;
+    }
+
+    .col-lg-7{
+        width: 58.33333333%;
+    }
+
+    .col-lg-8{
+        width: 66.66666667%;
+    }
+
+    .col-lg-5{
+        width: 41.66666667%;
+    }
+
+    .col-lg-2{
+        width: 16.66666667%;
+    }
+
+    .col-lg-0{
+        display: none;
+    }
+}
+
+
+/*
+-------------------------  Pantalla de Escritorio mediano MEDIUM(md)  --------------------------
+*/
+
+@media(max-width:1199px) and (min-width:992px){
+    .col-md-12{
+        width: 100%;
+    }
+
+    .col-md-6{
+        width: 50%;
+    }
+
+    .col-md-4{
+        width: 33.33333333%;
+    }
+
+    .col-md-3{
+        width: 25%;
+    }
+
+    .col-md-9{
+        width: 75%;
+    }
+
+    .col-md-7{
+        width: 58.33333333%;
+    }
+
+    .col-md-5{
+        width: 41.66666667%;
+    }
+
+    .col-md-2{
+        width: 16.66666667%;
+    }
+
+    .col-md-8{
+        width: 66.66666667%;
+    }
+
+    .col-md-0{
+        display: none;
+    }
+}
+
+/*
+-------------------------  Pantalla de Tablet SMALL(sm)  --------------------------
+*/
+
+@media(max-width:991px) and (min-width:768px){
+    .col-sm-12{
+        width: 100%;
+    }
+
+    .col-sm-6{
+        width: 50%;
+    }
+
+    .col-sm-4{
+        width: 33.33333333%;
+    }
+
+    .col-sm-3{
+        width: 25%;
+    }
+
+    .col-sm-9{
+        width: 75%;
+    }
+
+    .col-sm-7{
+        width: 58.33333333%;
+    }
+
+    .col-sm-5{
+        width: 41.66666667%;
+    }
+
+    .col-sm-2{
+        width: 16.66666667%;
+    }
+
+    .col-sm-8{
+        width: 66.66666667%;
+    }
+
+    .col-sm-0{
+        display: none;
+    }
+}
+
+/*
+-------------------------  Pantalla de Phones EXTRASMALL(xs)  --------------------------
+*/
+
+@media(max-width:767px){
+    .col-xs-12{width: 100%;}
+
+    .col-xs-2{width: 16.66666667%;}
+
+    .col-xs-6{width: 50%;}
+
+    .col-xs-4{ width: 33.33333333%;}
+
+    .col-xs-3{ width: 25%;}
+
+    .col-xs-9{width: 75%;}
+
+    .col-xs-7{width: 58.33333333%;}
+
+    .col-xs-5{ width: 41.66666667%;}
+
+    .col-xs-8{ width: 66.66666667%;}
+
+    .col-xs-0{display: none;}
+}   
+
+/*   SECCION 1 */
+
+header #logo{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
+    text-align: center;
+    line-height: 60px;
+}
+
+header .centro p{
+    width: 42px;
+    text-align: center;
+    line-height: 42px;
+    border-radius: 100%;
+    color: white;
+    background: #ccc;
+}
+
+header .centro#icono1 p{
+    background: blue;
+}
+
+header .centro#icono2 p{
+    background: red;
+}
+
+header .centro#icono3 p{
+    background: green;
+}
+
+/*-----SECCION 2-----*/
+nav ul li{
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li a{
+    color: white;
+    line-height: 48px;
+    display: block;
+    background: purple;
+}
+
+nav ul li a:hover{
+    background: plum;
+}
+
+nav ul li a:active{
+    background: blue;
+}
+
+/*-----SECCION 3-----*/
+
+section ul li img{
+    border-radius: 100%;
+}
+
+section ul li{
+    text-align: center;
+    line-height: 48px;
+}
+
+
+/*----- EXTRAS -------*/
+footer{
+    background: lightblue;
+    text-align: center;
+}
+
