@@ -8,6 +8,8 @@ import { InfoContenido } from '../interface/contenido.interface';
 export class InfoPaginaService {
 
   info: InfoContenido = {};  
+  cargando: boolean = true;
+
   equipo: InfoContenido[] = [];
   titulo: string[] = [];
   subtitulo: string[] = [];
@@ -39,6 +41,7 @@ export class InfoPaginaService {
         this.cod[i] = this.equipo[i].cod;
         this.parrafo[i] = this.equipo[i].parrafo;
       }
+      this.cargando = false;
       console.log(this.equipo); 
     })
   }

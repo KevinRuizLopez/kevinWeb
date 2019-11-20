@@ -2,10 +2,17 @@
 <head>
     <link href="../../../assets/css.css" type="text/css" rel="stylesheet" media="">
 </head>
-<div>
+<div> 
     <app-header class="animated fadeIn"></app-header>
     <br>
     <app-navigation></app-navigation>
     <br>
+    <div align="center" *ngIf="info.cargando">
+        <br><br><br><br><br><br>
+        <h2>Cargando ...</h2> <br>
+        <div class="loader"></div><br> <br>
+        <h3>Espere por favor</h3>
+    </div>  
+    <br><br><br>
     <app-articulo1></app-articulo1>
 </div>
