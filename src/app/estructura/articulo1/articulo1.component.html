@@ -1,23 +1,23 @@
 <head>
         <link href="../../../assets/css.css" type="text/css" rel="stylesheet" media="">
 </head>
-<div *ngFor="let number of info.equipo"  class="fila">
-            <div id="tituloArticulo" class="col-lg-6 col-md-6">
+<div *ngFor="let number of info.equipo" class="fila colorArticulo">
+        <div>
+            <div id="tituloArticulo" class="col-lg-4 col-md-4">
                     <h1>{{number.titulo}}</h1>
+                    <br>
                     <h3>{{number.subtitulo}}</h3>
-                    <img src="../../../assets/img/{{number.img}}.jpg" width="300">
+                    <br>
+                    <img src="../../../assets/img/{{number.img}}.jpg" width="300" height='300'>
+                    <br><br><br><br><hr><br><br>
             </div>
            
-            <br><br><br><br> 
 
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-8 col-md-8 centrarTexto">
+                    <br><br><br><br><br><br><br><br><br>
                     <h4>{{number.parrafo}}</h4>
-                    <br><br><br><br><br><br><br> <br> <br> <br> <br><br><br>
-                    <br><br>
-
             </div>
-            
-    <hr>
-    <br>
+          
+        </div>
 </div>
 

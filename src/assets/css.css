@@ -262,3 +262,7 @@ footer{
     text-align: center;
 }
 
+.fila.colorArticulo{
+    background: rgba(215, 151, 247, 0.892);
+}
+

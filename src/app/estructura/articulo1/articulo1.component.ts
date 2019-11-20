@@ -9,14 +9,11 @@ import { InfoPaginaService } from '../../services/info-pagina.service';
 })
 export class Articulo1Component implements OnInit {
 
+
   constructor( public info: InfoPaginaService ) { 
   }
 
   ngOnInit() {
   }
 
-  public objectKeys (objeto: any) {
-    const keys = Object.keys(objeto);
-    return keys;
-  }
 }
