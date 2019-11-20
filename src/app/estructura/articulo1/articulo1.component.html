@@ -1,23 +1,25 @@
 <head>
         <link href="../../../assets/css.css" type="text/css" rel="stylesheet" media="">
 </head>
-<div *ngFor="let number of info.equipo" class="fila colorArticulo">
-        <div>
+<div *ngFor="let number of info.equipo; let i = index" [attr.data-index]="i" class="fila colorArticulo">
+        <div class="dentroArticulo" >
             <div id="tituloArticulo" class="col-lg-4 col-md-4">
-                    <h1>{{number.titulo}}</h1>
-                    <br>
+                    <h1 class="animated fadeInLeft fuenteTitulo">{{number.titulo}}</h1>
                     <h3>{{number.subtitulo}}</h3>
                     <br>
-                    <img src="../../../assets/img/{{number.img}}.jpg" width="300" height='300'>
+                <a routerLink="articulo{{i+1}}">
+                    <img class="animated rubberBand bordeImagen" src="../../../assets/img/{{number.img}}.jpg" width="300" >
+                </a>
                     <br><br><br><br><hr><br><br>
             </div>
            
 
-            <div class="col-lg-8 col-md-8 centrarTexto">
+            <div class="col-lg-8 col-md-8 centrarTexto parrafo">
                     <br><br><br><br><br><br><br><br><br>
                     <h4>{{number.parrafo}}</h4>
             </div>
           
         </div>
+
 </div>
 

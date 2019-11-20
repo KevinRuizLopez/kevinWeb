@@ -14,7 +14,8 @@ import { Articulo4Component } from './estructura/articulo4/articulo4.component';
 import { Articulo5Component } from './estructura/articulo5/articulo5.component';
 import { Articulo6Component } from './estructura/articulo6/articulo6.component';
 
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { Articulo1realComponent } from './estructura/articulo1real/articulo1real.component'
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import {HttpClientModule} from '@angular/common/http'
     Articulo3Component,
     Articulo4Component,
     Articulo5Component,
-    Articulo6Component
+    Articulo6Component,
+    Articulo1realComponent
   ],
   imports: [
     BrowserModule,

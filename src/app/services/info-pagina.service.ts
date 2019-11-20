@@ -8,7 +8,13 @@ import { InfoContenido } from '../interface/contenido.interface';
 export class InfoPaginaService {
 
   info: InfoContenido = {};  
-  equipo: any[] = [];
+  equipo: InfoContenido[] = [];
+  titulo: string[] = [];
+  subtitulo: string[] = [];
+  img:  string[] = [];
+  cod:  string[] = [];
+  parrafo:  string[] = [];
+
 
   constructor(private http: HttpClient) { 
       this.cargarInfo();
@@ -21,15 +27,27 @@ export class InfoPaginaService {
       this.info = resp;
     })
   }
-
   private cargarEquipo(){
 
     this.http.get('https://myweb-c9107.firebaseio.com/contenido/contenido.json')
-    .subscribe((resp: any[]) =>{
+    .subscribe((resp: InfoContenido[]) =>{
       this.equipo = resp;
+      for(var i=0;i<6;i++){
+        this.titulo[i] = this.equipo[i].titulo;
+        this.subtitulo[i] = this.equipo[i].subtitulo;
+        this.img[i] = this.equipo[i].img;
+        this.cod[i] = this.equipo[i].cod;
+        this.parrafo[i] = this.equipo[i].parrafo;
+      }
       console.log(this.equipo); 
     })
-
   }
+
+  // public recorrerEquipo( ){
+  //  var i = 0;
+  //  for(i<this.equipo.length){
+  //    this.titulo[i] = this.equipo[i].titulo;
+  //  }
+  // }
   
 }

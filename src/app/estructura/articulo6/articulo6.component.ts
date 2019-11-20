@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { InfoPaginaService } from '../../services/info-pagina.service';
+import { InfoPaginaService } from '../../services/info-pagina.service';
 
 @Component({
   selector: 'app-articulo6',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Articulo6Component implements OnInit {
 
-  constructor() { }
+  constructor(public info: InfoPaginaService) { }
 
   ngOnInit() {
   }
